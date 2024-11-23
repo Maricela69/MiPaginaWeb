@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Web Personalizada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Página Personal</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#sobre-mi" onclick="mostrarSeccion('sobre-mi')">Sobre Mí</a></li>
+                <li><a href="#portafolio" onclick="mostrarSeccion('portafolio')">Portafolio</a></li>
+                <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                <li><a href="#comentarios" onclick="mostrarSeccion('comentarios')">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botones adicionales -->
+    <div class="botones">
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('sobre-mi')">Sobre Mí</button>
+        <button onclick="mostrarSeccion('portafolio')">Portafolio</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+        <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+    </div>
+
+    <!-- Secciones -->
+    <section id="inicio" class="seccion">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página web, donde comparto información sobre mis proyectos y experiencia profesional.</p>
+        <img src="./persona.jpg" alt="Mi Foto" class="perfil-img">
+        <p>Actividades:<br>
+            <a href="./02targetas/index.html">Tarjetas</a><br>
+            <a href="./20wideet de clima/index.html">Clima</a><br>
+            <a href="./Web Store/index.html">Web Store</a><br>
+            <a href="./10vuelta a targeta/index.html">Vuelta de tarjetas</a><br>
+            <a href="./Portafolios de Evidencias/">Mi primer Portafolio</a>
+            <br><br><br><br><br>
+        </p>
+    </section>
+
+    <section id="sobre-mi" class="seccion" style="display:none;">
+        <h2>Sobre Mí</h2>
+        <img src="cucei.jpg" alt="Fondo de trabajo" class="fondo-img">
+        <p>Soy estudiante de Ingeniería en Sistemas Computacionales, actualmente cursando el quinto semestre de la carrera.</p>
+        <p>Mis pasatiempos son las actividades al aire libre, escuchar música y ver series.</p>
+    </section>
+
+    <section id="portafolio" class="seccion" style="display:none;">
+        <h2>Pasatiempos</h2>
+        <div class="portafolio-grid">
+            <div class="proyecto">
+                <img src="futbol.jpg" alt="Proyecto 1">
+                <p>Deportes: en general me gustan los deportes, y mi deporte actual es el fútbol, jugando como portera.</p>
+            </div>
+            <div class="proyecto">
+                <img src="paisaje.jpg" alt="Proyecto 2">
+                <p>Me encantan las actividades al aire libre, caminar, disfrutar del entorno y conocer nuevos lugares.</p>
+            </div>
+            <div class="proyecto">
+                <img src="musica.png" alt="Proyecto 3">
+                <p>Disfruto mucho escuchando música. Es muy versátil el tipo de música que escucho, pero siempre trabajo mejor con música.</p>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion" style="display:none;">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:maricela.ramos6608@alumnos.udg.mx">maricela.ramos6608@alumnos.udg.mx</a></p>
+        <img src="komi.png" alt="Contacto">
+        <br><br><br><br><br>
+    </section>
+
+    <section id="comentarios" class="seccion" style="display:none;">
+        <a href="./vista_comentarios.php"><h2>Comentarios</h2></a>
+        <img src="komi3.jpg" alt="Contacto">
+        <form action="guardar_contacto.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <br><br><br><br><br>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mi Página Web Personalizada</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
