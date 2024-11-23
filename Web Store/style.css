@@ -1,0 +1,151 @@
+:root{
+  --negro:	#191919;
+  --pal1a: #ffe9d0;
+  --pal1b: #fffed3;
+  --pal1c: #bbe9ff;
+  --pal1d: #B1AFFF;
+  --pal2a: #161d6f;
+  --pal2b: #0b2f9f;
+  --pal2c: #98DED9;
+  --pal2d: #c7ffd8;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: var(--pal2b);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Estilos para la Sección de Productos */
+.productos-seccion {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.productos-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 250px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto p {
+  font-size: 1.2em;
+  color: var(--pal2c);
+}
+
+.producto button {
+  background-color: var(--pal2c);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.producto button:hover {
+  background-color: var(--pal2c);
+}
+
+/* Estilos para la Sección del Carrito */
+.carrito-seccion {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.carrito-lista {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrito-lista p {
+  font-size: 1.2em;
+}
+
+/* Estilos para la Sección de Contacto */
+.contacto-seccion {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contacto-seccion a {
+  color:var(--pal1d);
+  text-decoration: none;
+}
+
+.contacto-seccion a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
